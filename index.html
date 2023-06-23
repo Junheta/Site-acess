@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combate ao Racismo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000000;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .increase-font {
+      margin-bottom: 10px;
+    }
+
+    .high-contrast {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #888888;
+    }
+  </style>
+  <script>
+    function increaseFontSize() {
+      const currentFontSize = parseFloat(document.body.style.fontSize) || 16;
+      const newFontSize = currentFontSize + 2;
+      document.body.style.fontSize = newFontSize + 'px';
+    }
+
+    function resetFontSize() {
+      document.body.style.fontSize = '16px';
+    }
+
+    function toggleContrast() {
+      document.body.classList.toggle('high-contrast');
+    }
+  </script>
+</head>
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+  <div class="container">
+    <h1>Combate ao Racismo</h1>
+    <p>O racismo é uma forma de discriminação e preconceito baseada na raça ou etnia de uma pessoa. É importante combater o racismo e promover a igualdade de direitos para todos.</p>
+    <p>Este site tem o objetivo de conscientizar as pessoas sobre o racismo e fornecer recursos e informações para ajudar no combate a essa forma de discriminação.</p>
+
+    <div class="increase-font">
+      
+        <button onclick="increaseFontSize()">Aumentar Fonte</button>
+        <button onclick="resetFontSize()">Restaurar Fonte</button>
+
+    </div>
+    <div class="contrast">
+      <button onclick="toggleContrast()">Alternar Contraste</button>
+
+    </div>
+  </div>
+
+  <style>
+    .topic-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+  
+    .topic-content {
+      margin-right: 10px;
+    }
+  
+    .topic-image img {
+      max-width: 300px;
+      height: auto;
+      float: right;
+      margin-top: -258px;
+    }
+  </style>
+
+  <div class="topic-container">
+    <h2>Como combater o racismo:</h2>
+    <div class="topic-content">
+      <ul>
+        <li>Educação e Conscientização</li>
+        <li>Reflexão e Autocrítica</li>
+        <li>Desafiar Estereótipos e Preconceitos</li>
+        <li>Combater a Discriminação</li>
+        <li>Promover a Igualdade de Oportunidades</li>
+        <li>Ampliar a Representatividade</li>
+        <li>Alianças e Solidariedade</li>
+        <li>Empatia e Escuta Ativa</li>
+        <li>Sensibilização e Diálogo</li>
+        <li>Engajamento Político e Participação Cívica</li>
+      </ul>
+    </div>
+    <div class="topic-image">
+      <img src="https://img.freepik.com/fotos-gratis/maos-de-preto-e-branco-fazendo-o-aperto-de-mao_155003-1553.jpg" alt="Imagem do Site Racismo">
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; 2023 Combate ao Racismo. Todos os direitos reservados.</p>
+  </div>
+
+</body>
+</html>
